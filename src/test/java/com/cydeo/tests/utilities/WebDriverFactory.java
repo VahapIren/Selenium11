@@ -14,18 +14,28 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 
-public class WebDriverFactory {
+import java.util.concurrent.TimeUnit;
 
+public class WebDriverFactory {
     public static WebDriver getDriver(String browserType){
 
         if (browserType.equalsIgnoreCase("chrome")){
 
             WebDriverManager.chromedriver().setup();
-            return new ChromeDriver();
+            WebDriver driver =new ChromeDriver();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+
+            return driver;
 
         }else if (browserType.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
-            return new FirefoxDriver();
+            WebDriver driver =new ChromeDriver();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+            return driver;
         }else{
             System.out.println("Given browser type does not exist/or is not currently supported");
             System.out.println("Driver = null");

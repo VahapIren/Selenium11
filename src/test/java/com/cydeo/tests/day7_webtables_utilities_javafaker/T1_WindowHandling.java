@@ -13,8 +13,7 @@ public class T1_WindowHandling {
     @BeforeMethod
     public void setupMethod(){
         driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 
     }
 
@@ -24,8 +23,8 @@ public class T1_WindowHandling {
         driver.get("https://www.amazon.com");
 
         //3. Copy-paste the lines from below into your class
-        ((JavascriptExecutor) driver).executeScript("window.open('https://google.com','_blank');");
         ((JavascriptExecutor) driver).executeScript("window.open('https://etsy.com','_blank');");
+        ((JavascriptExecutor) driver).executeScript("window.open('https://google.com','_blank');");
         ((JavascriptExecutor) driver).executeScript("window.open('https://facebook.com','_blank');");
 
         //4. Create a logic to switch to the tab where Etsy.com is open
