@@ -31,7 +31,7 @@ public class WebDriverFactory {
 
         }else if (browserType.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
-            WebDriver driver =new ChromeDriver();
+            WebDriver driver =new FirefoxDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
