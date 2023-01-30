@@ -55,7 +55,7 @@ public class DropdownPractices {
         Select dayDropdown = new Select(driver.findElement(By.xpath("//select[@id='day']")));
 
         //Select year using : visible text
-        yearDropdown.selectByVisibleText("1923");
+        yearDropdown.selectByVisibleText("1924");
 
         //Select month using : value attribute
         monthDropdown.selectByValue("11");
@@ -64,7 +64,7 @@ public class DropdownPractices {
         dayDropdown.selectByIndex(0);
 
         //creating expected values
-        String expectedYear = "1923";
+        String expectedYear = "1924";
         String expectedMonth = "December";
         String expectedDay = "1";
 
@@ -82,7 +82,7 @@ public class DropdownPractices {
 
     @AfterMethod
     public void teardownMethod(){
-        driver.close();
+        //driver.close();
     }
 
 }

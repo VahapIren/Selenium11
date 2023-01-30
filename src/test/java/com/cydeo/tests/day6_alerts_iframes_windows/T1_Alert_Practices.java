@@ -1,9 +1,13 @@
 package com.cydeo.tests.day6_alerts_iframes_windows;
 
-import com.cydeo.tests.utilities.*;
-import org.openqa.selenium.*;
-import org.testng.*;
-import org.testng.annotations.*;
+import com.cydeo.tests.utilities.WebDriverFactory;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.*;
 
