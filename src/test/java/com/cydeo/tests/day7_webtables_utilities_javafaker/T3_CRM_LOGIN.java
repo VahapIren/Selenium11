@@ -13,8 +13,6 @@ public class T3_CRM_LOGIN {
     @BeforeMethod
     public void setupMethod(){
         driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 
