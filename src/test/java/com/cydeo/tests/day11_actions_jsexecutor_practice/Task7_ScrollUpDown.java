@@ -11,7 +11,7 @@ public class Task7_ScrollUpDown {
         //2- Go to: https://practice.cydeo.com/large
         Driver.getDriver().get("https://practice.cydeo.com/large");
 
-        WebElement
+
 
     }
 }
