@@ -1,4 +1,4 @@
-package com.cydeo.tests.utilities;
+package com.cydeo.utilities;
 
 /*
 In this class only general utility methods that are NOT related to some specific page.
@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.*;
 import org.testng.*;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class BrowserUtils {
 
@@ -69,6 +70,8 @@ public class BrowserUtils {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.invisibilityOf(webElement));
     }
+
+
 
 
 }

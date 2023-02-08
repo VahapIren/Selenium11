@@ -1,10 +1,8 @@
 package com.cydeo.tests.day7_webtables_utilities_javafaker;
 
-import com.cydeo.tests.utilities.*;
+import com.cydeo.utilities.*;
 import org.openqa.selenium.*;
 import org.testng.annotations.*;
-
-import java.util.concurrent.*;
 
 public class T1_WindowHandling {
 
